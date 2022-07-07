@@ -1,0 +1,117 @@
+/** FONTS */
+/*importamos la fuente monserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+/** RESET */
+*{ /*el * es para señalar a todo lo que hay aquí */
+    margin: 0; /*a todo le quitamos margen, padding y le ponemos fuente monserrat*/
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+}
+/** SHARE */
+/*(cosas que se repiten a lo largo de la pagina, como el fondo) */
+.bg-gradient{
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,207,63,0.5133403703278187) 50%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,207,63,0.5133403703278187) 50%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,207,63,0.5133403703278187) 50%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+}
+section{
+    position: relative; /*para que la curtain quede bien posicionada */
+    overflow: hidden; /*para que no se muestre nada que sobresalga */
+}
+.grid{
+    width: 90%;
+    margin: 0 auto; /*centra siempre el contenido */
+    max-width: 900px; /*pensando en dispositivos grandes para que no se agrande mas */
+}
+.wrapper{
+    position: relative;
+}
+.img-container{
+    background-size: contain; /*podria ser cover en vez de contain */
+    background-repeat: no-repeat; /*que no se repita */
+    width: 100%; /*ancho total */
+    height: 40vh;
+    min-height: 280px; /*minimo para dispositivos pequeños */
+    background-position: center center;
+}
+.btn-basic{ /*.todos los botones serán así */
+    margin: 10px 0px;
+    background: green;
+    border-radius: 50px;
+    border: none; /*que no tenga borde porque por defecto se lo asignada */
+    color: #fff; /*color del texto blanco */
+    padding: 20px 70px;
+    font-size: 15px; /*tamaño de las letras */
+    font-weight: 600; /*grosor de las letras*/
+    cursor: pointer; /*como es el cursor cuando pasa por encima */
+    margin-top: 30px;
+    transition: .5s all ease; /*cuando hagamos el hover, pasar raton por encima, el efecto es 5segundos mas suave */
+}
+.btn-basic:hover{ 
+    background: rgb(5, 151, 208);
+}
+/** HEADER */
+.img-logo{
+    width: 60px;
+}
+/** SECTION FIRST */
+.section-firs{
+    padding-top: 40px;
+}
+.curtain{ /*vamos a darle un efecto transversal y lo vamos a centrar para prevenir errores de navegadores*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%; /*que ocupe todo el tamaño de alto del padre */
+    height: 85%; /*pero de ancho un poco menos */
+    z-index: 0; /* para que quede atras y nunca sobre otro elemento */
+    transform: skewY(-3deg); /*esto le da el efecto de diagonal en la y griega 3 grados */
+    transform-origin: top left; /* que empiece arriba a la izquierda */
+}
+.wrapper-first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-container{ /*color de las letras que estan dentro de text-container */
+    color: #fff;
+}
+.sub-heading{ /*separacion entre heading y parrafo */
+    margin: 10px 0px;
+}
+.img-container-one{
+    background-image: url(./img/Bananas.svg);
+    width: 65%;
+}
+/** SECTION SECOND*/
+.wrapper-second{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icons-section-second{
+    Margin-top: 5%; /*margen superior */
+    width: 15%; /*tamaño de las imagenes*/
+    Margin-bottom: 0%;
+}
+/** SECTION THIRD*/
+.section-third{
+    margin-top: 75px;
+}
+.curtain-reverse{
+    height:100%;
+    transform: skewY(5deg);
+    transform-origin: top left;
+}
+.img-container-two{
+    background-image: url(/img/Section-First.png);
+    width: 100%;
+}
+/** SECTION FOURTH*/
+.section-fourth{
+    padding: 75px 0px;
+}
