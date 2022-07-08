@@ -115,3 +115,91 @@ section{
 .section-fourth{
     padding: 75px 0px;
 }
+/** SECTION FIFTH*/
+.section-fifth{
+    margin: 50px 0px; /* espaciado 50 arriba y abajo y cero a los lados*/
+}
+.box{
+    text-align:center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.8); /*sombreado de la caja */
+    border-radius: 25px;
+}
+.price-container{
+    display:flex; /*para que se acomoden las letras una al lado de la otra */
+    justify-content: space-between; /*para que abarquen todo el ancho posible*/
+    border-bottom: 1px solid #ccc; /*subrayado*/
+    padding: 10px;
+}
+.price-tag{
+    color:rgb(5, 151, 208);
+    font-weight: bold;
+}
+.box-text{
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 13px;
+}
+/** SECTION SIXTH */
+.section-sixth{
+    padding: 70px 0px;
+}
+.wrapper-sixth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#newsletter-form{ /* id del formulario */
+    width: 90%;
+    max-width: 500px;
+}
+#newsletter-input{
+    box-sizing: border-box; /* para que el padding lo meta dentro */
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none; /*que no tenga borde que por defecto se pone alguno*/
+}
+.btn-newsletter{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+/** FOOTER */
+footer{
+    margin: 50px 0px 20px;
+}
+.legal-links-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.legal-link-text{
+    color:#ccc;
+    text-decoration: none; /* para quitar subrayado que viene por defecto */
+    font-size: 12px;
+    transition: .5s all ease;
+}
+.lega-link-text:focus{
+    outline: none; /*para sacar lo azul del link */
+}
+.legal-link-text:hover{
+    color: black;
+}
+.rrss-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rrss-link{
+    padding: 2px;
+    border-radius: 20px;
+    transition: .5s all ease;
+}
+.rrss-link:hover{
+    transform: scale(1.3);
+}
