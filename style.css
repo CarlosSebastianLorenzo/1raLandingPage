@@ -56,6 +56,9 @@ section{
 .img-logo{
     width: 60px;
 }
+.img-logo:hover{
+    transform: translate(10%,-10%);
+}
 /** SECTION FIRST */
 .section-firs{
     padding-top: 40px;
@@ -201,5 +204,5 @@ footer{
     transition: .5s all ease;
 }
 .rrss-link:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
