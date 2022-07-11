@@ -123,6 +123,7 @@ section{
     margin: 50px 0px; /* espaciado 50 arriba y abajo y cero a los lados*/
 }
 .box{
+    max-width: 300px;
     text-align:center;
     margin: 10px;
     padding: 10px;
@@ -191,7 +192,7 @@ footer{
     outline: none; /*para sacar lo azul del link */
 }
 .legal-link-text:hover{
-    color: black;
+    color: black; /*cambia el color cuando se pasa el mouse encima */
 }
 .rrss-box{
     display: flex;
@@ -204,5 +205,24 @@ footer{
     transition: .5s all ease;
 }
 .rrss-link:hover{
-    transform: scale(1.1);
+    transform: scale(1.1); /*para agrandar el icono cuando se pasa el mouse encima */
+}
+/** MEDIA QUERIES */
+/* para hacer la web Responsive */
+@media(min-width: 576px){ /*pantalla más pequeña */
+    /** SECTION SECOND*/
+    .icons-section-second{
+        width: 95px;        /*para que los iconos no aumenten más de 95px su tamaño */
+    }
+}
+@media(min-width: 768px){
+    /** SECTION FIRST*/
+    .wrapper-first{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    /** SECTION FIFHT*/
+    .box{
+        width: 30%;
+    }
 }
